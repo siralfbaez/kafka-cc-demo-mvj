@@ -1,7 +1,6 @@
 package com.urme.kafka_cc_demo_mvj25.producer;
 
 import com.urme.kafka_cc_demo_mvj25.CloudMessage;
-// import com.urme.urme_cc_kafka_producer_consumer_mvj25.CloudMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

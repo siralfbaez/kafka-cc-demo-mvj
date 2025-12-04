@@ -36,13 +36,13 @@ This project was built to showcase solutions for common Spring Kafka and Jackson
     ```bash
     mvn clean install
     ```
-
+    
 2.  **Run the Spring Boot Application:**
     This command starts both the Producer and Consumer services simultaneously:
     ```bash
     mvn spring-boot:run
     ```
-
+![Kafka Architecture Diagram: Producer and Consumer with Confluent Cloud](images/intelliJ-kafka-run.png)
 ---
 
 ## 🧪 Testing the Message Flow
@@ -61,3 +61,21 @@ This payload successfully tests the serialization of the `java.time.Instant` fie
     "content": "A successful JSON message from Postman!",
     "timestamp": "2025-11-25T10:26:00Z"
 }
+```
+![Kafka Architecture Diagram: Producer and Consumer with Confluent Cloud](images/postman-test-message-success.png)
+
+We can also check the Confluent Cloud Dashboard to verify messages
+are being posted as expected
+
+![Kafka Architecture Diagram: Producer and Consumer with Confluent Cloud](images/confluent-c-message-posted.png)
+
+This is part of a bigger implementation DR use case.
+
+![Kafka Architecture Diagram: Producer and Consumer with Confluent Cloud](images/confluent-c-dr-hlview.png)
+
+High level view 
+![Kafka Architecture Diagram: Producer and Consumer with Confluent Cloud](images/Cluster-Linking-hl-view-mirror2.png)
+
+Detailed topic mirrored
+
+![Kafka Architecture Diagram: Producer and Consumer with Confluent Cloud](images/Cluster-Linking-topic-mirror.png)

@@ -1,5 +1,4 @@
 package com.urme.kafka_cc_demo_mvj25.consumer;
-// package com.urme.urme_cc_kafka_producer_consumer_mvj25.consumer;
 
 import com.urme.kafka_cc_demo_mvj25.CloudMessage;
 import org.slf4j.Logger;

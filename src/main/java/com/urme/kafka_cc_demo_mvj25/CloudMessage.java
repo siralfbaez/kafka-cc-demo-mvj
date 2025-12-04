@@ -10,7 +10,7 @@ public record CloudMessage(
         Instant timestamp
 ) {
     @JsonCreator
-    public static CloudMessage create( // Changed to static method 'create'
+    public static CloudMessage create(
                                        @JsonProperty("id") String id,
                                        @JsonProperty("content") String content,
                                        @JsonProperty("timestamp") Instant timestamp) {
